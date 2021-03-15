@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ 'ABOUT.title' | translate}}</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ 'ABOUT.title' | translate}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        {{ 'ABOUT.CARD1.title' | translate}}
+      </ion-card-title>
+      <ion-card-subtitle>
+        {{ 'ABOUT.CARD1.subtitle' | translate}}
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      {{ 'ABOUT.CARD1.text' | translate}}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        {{ 'ABOUT.CARD2.title' | translate}}
+      </ion-card-title>
+      <ion-card-subtitle>
+        {{ 'ABOUT.CARD2.subtitle' | translate}}
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      {{ 'ABOUT.CARD2.text' | translate}}
+      <br><br>
+      <ion-button expand="block" (click)="openComponentsURL()" fill="outline">{{ 'ABOUT.CARD2.btnText' | translate}}
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  
+
+</ion-content>

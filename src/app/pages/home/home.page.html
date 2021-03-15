@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ 'HOME.title' | translate}}</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ 'HOME.title' | translate}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        {{ 'HOME.CARD1.title' | translate }}
+      </ion-card-title>
+      <ion-card-subtitle>
+        {{ 'HOME.CARD1.subtitle' | translate }}
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      {{ 'HOME.CARD1.text' | translate }}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        {{ 'HOME.CARD2.title' | translate }}
+      </ion-card-title>
+      <ion-card-subtitle>
+        {{ 'HOME.CARD2.subtitle' | translate }}
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p [innerHTML]="'HOME.htmlContent' | translate "></p>
+      {{ 'HOME.CARD2.text' | translate }}
+      <br><br>
+      <p [innerHTML]="'HOME.sayHello' | translate:params"></p>
+      <br><br>
+      <ion-button expand="block" (click)="showToast()" fill="outline">{{ 'HOME.showToastBtn' | translate }}
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>

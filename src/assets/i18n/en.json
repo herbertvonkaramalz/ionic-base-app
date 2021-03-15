@@ -1,0 +1,33 @@
+{
+  "HOME": {
+    "title": "home",
+    "htmlContent": "<b>This is bold text</b> and <i>this is italic</b>",
+    "sayHello": "Hello {{name}}! Welcome to your new app!",
+    "showToastBtn": "Show me something new!",
+    "simpleAlert": "Hey! You're epic!",
+    "CARD1": {
+      "title": "Be Creative!",
+      "subtitle": "Greet your users.",
+      "text": "Your app lives here! Every time someone opens your app, this page is displayed. So build the main function here."
+    },
+    "CARD2": {
+      "title": "International!",
+      "subtitle": "Simple and fast!",
+      "text": "ngx-translate supports you in placing different languages or even systems here. In addition, the system can also be used to quickly and easily adapt strings for the complete app."
+    }
+  },
+  "ABOUT": {
+    "title": "About the App",
+    "CARD1": {
+      "title": "Be creative!",
+      "subtitle": "this is your about view",
+      "text": "Inform the user about privacy, provide support information or show the current app version."
+    },
+    "CARD2": {
+      "title": "Help?!",
+      "subtitle": "Make your app even better!",
+      "text": "With the Ionic Framework you can develop beautiful UIs and do so with already existing components - adapted to any system.",
+      "btnText": "Show me!"
+    }
+  }
+}

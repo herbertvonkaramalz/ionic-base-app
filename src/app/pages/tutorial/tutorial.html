@@ -1,0 +1,47 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button color='primary' (click)="startApp()" [hidden]="!showSkip">Skip</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager="false">
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-1.png" class="slide-image" />
+      <h2 class="slide-title">
+        This is your awesome App
+        <b>ICA</b>
+      </h2>
+      <p>
+        Let the user pick the language and swipe next. If you want, you can translate the Tutorial too!
+      </p>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col *ngFor="let language of languages">
+            <div><img [src]="language.img" (click)="setLanguage(language.value)" class="flags" /></div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-2.png" class="slide-image" />
+      <h2 class="slide-title">What is Ionic?</h2>
+      <p>
+        <b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies
+        like HTML, CSS, and JavaScript.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image" />
+      <h2 class="slide-title">Ready to Play?</h2>
+      <ion-button fill="clear" (click)="startApp()">
+        Continue
+        <ion-icon slot="end" name="arrow-forward"></ion-icon>
+      </ion-button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

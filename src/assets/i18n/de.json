@@ -1,0 +1,33 @@
+{
+    "HOME": {
+        "title": "Startseite",
+        "htmlContent": "<b>Dies ist ein fetter Text</b> und <i>dieser ist Kursiv</b>",
+        "sayHello": "Hallo {{name}}! Willkommen bei deiner neuen App!",
+        "showToastBtn": "Zeige mir etwas neues!",
+        "simpleAlert": "Hey! Du bist episch!",
+        "CARD1": {
+            "title": "Sei kreativ!",
+            "subtitle": "Begrüsse deine Nutzer.",
+            "text": "Deine App lebt hier! Jedes mal, wenn jemand deine App öffnet, dann wird diese Seite angezeigt. Baue also hier die Hauptfunktion ein."
+        },
+        "CARD2": {
+            "title": "International!",
+            "subtitle": "Einfach und schnell!",
+            "text": "ngx-translate unterstützt Dich dabei, verschiedene Sprachen oder auch Systeme hier unterzubringen. Zudem kann das System auch verwendet werden, um Strings schnell und einfach für die komplette App anzupassen."
+        }
+    },
+    "ABOUT": {
+        "title": "Über die App",
+        "CARD1": {
+            "title": "Sei kreativ!",
+            "subtitle": "Dies ist deine Über-Ansicht.",
+            "text": "Informiere den Nutzer über den Datenschutz, gib Support-Informationen an oder zeige die aktuelle App-Version an."
+        },
+        "CARD2": {
+            "title": "Hilfe?!",
+            "subtitle": "Mach deine App noch besser!",
+            "text": "Mit dem Ionic Framework kannst Du schöne UIs entwickeln und dies mit bereits existierenden Komponenten - angepasst an jedes System.",
+            "btnText": "Zeig's mir!"
+        }
+    }
+}
